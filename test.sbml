@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="model">
+    <listOfCompartments>
+      <compartment id="compartment_0000001"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="MG_001_MONOMER" name="DNA polymerase III, beta subunit" compartment="compartment_0000001"/>
+      <species id="AC" name="acetate" compartment="compartment_0000001"/>
+      <species id="AMP_ARG" name="L-Arginyl-AMP" compartment="compartment_0000001"/>
+      <species id="MG_001" name="DNA polymerase III, beta subunit" compartment="compartment_0000001"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="Aas1" name="acyl-[acyl-carrier-protein] synthetase (n-C12:0)"/>
+    </listOfReactions>
+  </model>
+</sbml>

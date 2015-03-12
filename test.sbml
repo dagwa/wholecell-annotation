@@ -1,6 +1,48 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
-  <model id="model">
+  <model metaid="model1" id="model">
+		<annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+							 xmlns:dc="http://purl.org/dc/elements/1.1/"
+							 xmlns:dcterms="http://purl.org/dc/terms/"
+							 xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+							 xmlns:bqbiol="http://biomodels.net/biology-qualifiers/"
+							 xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#model1">
+          <dc:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Knüpfer</vCard:Family>
+                  <vCard:Given>Christian</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>christian.knuepfer@uni-jena.de</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>University of Jena</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+            </rdf:Bag>
+          </dc:creator>
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2015-03-12T09:54:48Z</dcterms:W3CDTF>
+          </dcterms:created>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2015-03-12T09:54:48Z</dcterms:W3CDTF>
+          </dcterms:modified>
+          <bqmodel:isDerivedFrom>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/j.cell.2012.05.044"/>
+            </rdf:Bag>
+          </bqmodel:isDerivedFrom>
+          <bqbiol:occursIn>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/taxonomy/243273"/>
+            </rdf:Bag>
+          </bqbiol:occursIn>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+
     <listOfCompartments>
       <compartment id="compartment_0000001"/>
     </listOfCompartments>

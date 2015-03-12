@@ -29,6 +29,16 @@
           <dcterms:modified rdf:parseType="Resource">
             <dcterms:W3CDTF>2015-03-12T09:54:48Z</dcterms:W3CDTF>
           </dcterms:modified>
+          <bqmodel:isInstanceOf>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/mamo/MAMO_0000036"/>
+            </rdf:Bag>
+          </bqmodel:isInstanceOf>					
+          <bqmodel:isInstanceOf>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
+            </rdf:Bag>
+          </bqmodel:isInstanceOf>					
           <bqmodel:isDerivedFrom>
             <rdf:Bag>
               <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/j.cell.2012.05.044"/>

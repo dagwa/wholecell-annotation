@@ -54,6 +54,20 @@ reader = SBMLReader()
 document = reader.readSBML("test.sbml")
 model=document.getModel()
 
+#annotate model with reference to original model
+cv=CVTerm()
+cv.setQualifierType(MODEL_QUALIFIER)
+cv.setModelQualifierType(BQM_IS_DERIVED_FROM)
+cv.addResource("http://identifiers.org/doi/10.1016/j.cell.2012.05.044")
+model.addCVTerm(cv)
+
+#annotate model with taxonomic information
+cv=CVTerm()
+cv.setQualifierType(BIOLOGICAL_QUALIFIER)
+cv.setBiologicalQualifierType(BQB_HAS_TAXON)
+cv.addResource("http://identifiers.org/taxonomy/243273")
+model.addCVTerm(cv)
+
 #iterate over all species
 for i in range (0,model.getNumSpecies()):
   sp=model.getSpecies(i)

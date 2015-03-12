@@ -34,11 +34,11 @@
               <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/j.cell.2012.05.044"/>
             </rdf:Bag>
           </bqmodel:isDerivedFrom>
-          <bqbiol:occursIn>
+          <bqbiol:hasTaxon>
             <rdf:Bag>
               <rdf:li rdf:resource="http://identifiers.org/taxonomy/243273"/>
             </rdf:Bag>
-          </bqbiol:occursIn>
+          </bqbiol:hasTaxon>
         </rdf:Description>
       </rdf:RDF>
     </annotation>

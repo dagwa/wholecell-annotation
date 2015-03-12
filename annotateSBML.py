@@ -7,6 +7,7 @@ Created on Tue Mar 10 16:53:05 2015
 
 IDORG="http://identifiers.org/"
 
+#modified from CROSS_REFERENCE_SOURCE_URLS in public.models
 CV_SOURCES = {
 	"ATCC": IDORG+"atcc/",
 	"BiGG": "http://bigg.ucsd.edu/bigg/postMet.pl?organism=3307911&organism=1461534&organism=222668&organism=3277493&organism=2795088&organism=2423527&organism=1823466&compartment_list=any&pathway_list=any&name_text=",
@@ -18,7 +19,7 @@ CV_SOURCES = {
 	"CMR": IDORG+"cmr.gene/",#resource offline, deprecated!
 	"EC": IDORG+"ec-code/",
 	"GenBank": IDORG+"insdc/",#Karr (2011) uses wrong URL
-	"ISBN": "http://isbndb.com/search-all.html?kw=%s",
+	"ISBN": "http://isbndb.com/search-all.html?kw=",
 	"KEGG": IDORG+"kegg.compound/",
 	"KNApSAcK": IDORG+"knapsack/",
 	"LipidBank": IDORG+"lipidbank/",
@@ -26,13 +27,13 @@ CV_SOURCES = {
 	"PDB": IDORG+"pdb/",
 	"PDBCCD": IDORG+"pdb.ligand/",
 	"PubChem": IDORG+"pubchem.substance/",
-	"PubMed": "http://www.ncbi.nlm.nih.gov/pubmed/%s",
-	"RefSeq": "http://www.ncbi.nlm.nih.gov/nuccore/%s",
+	"PubMed": "http://www.ncbi.nlm.nih.gov/pubmed/",
+	"RefSeq": "http://www.ncbi.nlm.nih.gov/nuccore/",
 	"SABIO-RK": "http://sabio.villa-bosch.de/kineticLawEntry.jsp?kinlawid=%s&viewData=true",
 	"SwissProt": IDORG+"uniprot/",
-	"Taxonomy": "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=%s",
+	"Taxonomy": "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=",
 	"ThreeDMET": IDORG+"3dmet/",	
-	"URL": "%s",
+#	"URL": "%s",#not used
 }
 
 import sys

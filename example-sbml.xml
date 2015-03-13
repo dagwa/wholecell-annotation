@@ -63,7 +63,9 @@
       <species id="MG_001" name="DNA polymerase III, beta subunit" compartment="compartment_0000001"/>
     </listOfSpecies>
     <listOfReactions>
-      <reaction id="Aas1" name="acyl-[acyl-carrier-protein] synthetase (n-C12:0)"/>
+      <reaction id="Aas1" name="acyl-[acyl-carrier-protein] synthetase
+																(n-C12:0)"/>
+      <reaction id="AceE" name="pyruvate dehydrogenase"/>
     </listOfReactions>
   </model>
 </sbml>

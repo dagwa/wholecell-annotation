@@ -20,7 +20,7 @@ CV_SOURCES = {
     "CMR": IDORG+"cmr.gene/",#resource offline, deprecated!
     "EC": IDORG+"ec-code/",
     "GenBank": IDORG+"insdc/",#Karr (2011) uses wrong URL
-    "ISBN": "http://isbndb.com/search-all.html?kw=",
+#    "ISBN": "http://isbndb.com/search-all.html?kw=", #not supported
     "KEGG": IDORG+"kegg.compound/",
     "KNApSAcK": IDORG+"knapsack/",
     "LipidBank": IDORG+"lipidbank/",
@@ -28,11 +28,12 @@ CV_SOURCES = {
     "PDB": IDORG+"pdb/",
     "PDBCCD": IDORG+"pdb.ligand/",
     "PubChem": IDORG+"pubchem.substance/",
-    "PubMed": "http://www.ncbi.nlm.nih.gov/pubmed/",
+#    "PubMed": "http://www.ncbi.nlm.nih.gov/pubmed/", #not supported
     "RefSeq": "http://www.ncbi.nlm.nih.gov/nuccore/",
-    "SABIO-RK": "http://sabio.villa-bosch.de/kineticLawEntry.jsp?kinlawid=%s&viewData=true",
+    "SABIO-RK": IDORG+"sabiork.kineticrecord/",
     "SwissProt": IDORG+"uniprot/",
-    "Taxonomy": "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=",
+#    "Taxonomy": "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=",
+# taxonomy entry is manually added      
     "ThreeDMET": IDORG+"3dmet/",
 #    "URL": "%s",#not used
 }

@@ -48,7 +48,6 @@ from django.core.exceptions import ObjectDoesNotExist
 
 from public.models import CrossReference
 from public.models import Entry
-from public.models import CROSS_REFERENCE_SOURCE_URLS
 
 def main (args):
   """usage: annotateSBML <input-filename> <output-filename>

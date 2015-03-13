@@ -100,9 +100,13 @@ def main (args):
         cv.setQualifierType(BIOLOGICAL_QUALIFIER)
         cv.setBiologicalQualifierType(BQB_IS_VERSION_OF)
         for c in o.cross_references.all():
-          print CROSS_REFERENCE_SOURCE_URLS[c.source] % c.xid
-          cv.addResource(str(CV_SOURCES[c.source]+c.xid))
-          sp.addCVTerm(cv)
+          if CV_SOURCES.has_key(c.source):
+            print "add annotation to species "+sp.getId()+":",
+            print CV_SOURCES[c.source]+c.xid
+            cv.addResource(str(CV_SOURCES[c.source]+c.xid))
+            sp.addCVTerm(cv)
+          else:
+            print "WARNING: resource"+c.source+" not supported!"
     except ObjectDoesNotExist:
       print 'does not exist'
   
@@ -118,9 +122,13 @@ def main (args):
         cv.setQualifierType(BIOLOGICAL_QUALIFIER)
         cv.setBiologicalQualifierType(BQB_IS_VERSION_OF)
         for c in o.cross_references.all():
-          print CROSS_REFERENCE_SOURCE_URLS[c.source] % c.xid
-          cv.addResource(str(CV_SOURCES[c.source]+c.xid))
-          r.addCVTerm(cv)
+          if CV_SOURCES.has_key(c.source):
+            print "add annotation to reaction "+r.getId()+":",
+            print CV_SOURCES[c.source]+c.xid
+            cv.addResource(str(CV_SOURCES[c.source]+c.xid))
+            r.addCVTerm(cv)
+          else:
+            print "WARNING: resource"+c.source+" not supported!"            
     except ObjectDoesNotExist:
       print 'does not exist'
   
